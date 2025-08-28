@@ -230,7 +230,7 @@ export default function UseCases() {
                 Custom Solutions Available
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
-                Don't see your use case? Our platform supports custom agent development and 
+                Don&apos;t see your use case? Our platform supports custom agent development and 
                 integration. Work with our team to create specialized solutions for your unique requirements.
               </p>
               <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
