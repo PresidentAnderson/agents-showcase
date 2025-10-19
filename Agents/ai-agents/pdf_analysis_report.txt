@@ -1,0 +1,27 @@
+============================================================
+PDF DOCUMENT ANALYSIS REPORT
+============================================================
+
+Total PDFs analyzed: 17
+Duplicates found: 8
+
+Document Type Distribution:
+  general: 17
+
+----------------------------------------
+Year Distribution:
+  1979: 1
+  2025: 16
+
+----------------------------------------
+Folder Structure Analysis:
+  Pierre Sormany: 13
+  EPSCAN: 4
+
+----------------------------------------
+Sample Documents by Type:
+
+GENERAL:
+  - Analyse des espaces.pdf
+  - booking reviews with comments about shared space with highlights.pdf
+  - booking reviews with comments about shared space.pdf
