@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Agents Platform
 
-## Getting Started
+A comprehensive showcase website for AI agents with authentication, dashboard, and full backend integration.
 
-First, run the development server:
+## 🚀 Features
+
+- **Authentication System** - Complete signup/login with API integration
+- **User Dashboard** - Agent management and analytics
+- **Responsive Design** - Mobile and desktop optimized
+- **API Integration** - RESTful backend with Next.js API routes
+- **Agent Marketplace** - Browse and deploy AI agents
+- **Contact System** - Functional contact form with backend
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 15, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Authentication**: Cookie-based sessions
+- **Components**: Custom UI components with Radix UI
+- **Icons**: Lucide React
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/PresidentAnderson/agents-showcase.git
+
+# Navigate to project directory
+cd agents-showcase
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Vercel (Recommended)
 
-## Learn More
+1. **Connect to Vercel**:
+   - Visit [vercel.com](https://vercel.com)
+   - Import your GitHub repository
+   - Deploy automatically
 
-To learn more about Next.js, take a look at the following resources:
+2. **Environment Variables** (if needed):
+   ```
+   NEXTAUTH_SECRET=your-secret-key
+   NEXTAUTH_URL=your-domain.vercel.app
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Manual Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Build the project
+npm run build
 
-## Deploy on Vercel
+# Start production server
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔧 API Endpoints
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `POST /api/auth/login` - User authentication
+- `POST /api/auth/signup` - User registration
+- `POST /api/auth/logout` - User logout
+- `GET /api/auth/me` - Get current user
+- `POST /api/contact` - Contact form submission
+
+## 🎯 Demo Credentials
+
+- **Email**: demo@example.com
+- **Password**: password
+
+## 📱 Pages
+
+- `/` - Homepage with hero and features
+- `/login` - User authentication
+- `/signup` - User registration
+- `/dashboard` - User dashboard (requires auth)
+- `/agents` - Agent marketplace
+- `/pricing` - Subscription plans
+- `/features` - Platform features
+- `/docs` - Documentation
+- `/contact` - Contact form
+
+## 🤖 AI Agents
+
+The platform includes various AI agent types:
+- General Purpose Agent
+- Code Review Expert
+- Data Science Analyst
+- Disk Organizer
+- Research Assistant
+- Content Creator
+
+## 🔒 Security
+
+- HTTP-only cookies for authentication
+- CSRF protection
+- Input validation and sanitization
+- Secure headers configuration
+
+## 📄 License
+
+MIT License - see LICENSE file for details
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+**Status**: ✅ Production Ready - Full functionality implemented
+
+Deploy to Vercel: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/PresidentAnderson/agents-showcase)
