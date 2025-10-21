@@ -13,11 +13,11 @@ export default function SignUp() {
     password: '',
     confirmPassword: ''
   })
-  const [errors, setErrors] = useState<any>({})
+  const [errors, setErrors] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(false)
 
   const validateForm = () => {
-    const newErrors: any = {}
+    const newErrors: Record<string, string> = {}
     
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required'

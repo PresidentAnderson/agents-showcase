@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge'
 import { 
   Bot, Code, Database, HardDrive, Brain, Search,
-  Filter, ChevronDown, Star, Users, Clock, TrendingUp,
+  Filter, Star, Users, TrendingUp,
   ArrowRight, Sparkles
 } from 'lucide-react'
 import Link from 'next/link'

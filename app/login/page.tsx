@@ -12,12 +12,12 @@ export default function Login() {
     password: '',
     rememberMe: false
   })
-  const [errors, setErrors] = useState<any>({})
+  const [errors, setErrors] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(false)
   const [loginError, setLoginError] = useState('')
 
   const validateForm = () => {
-    const newErrors: any = {}
+    const newErrors: Record<string, string> = {}
     
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required'

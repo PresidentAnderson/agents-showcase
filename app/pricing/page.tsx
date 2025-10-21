@@ -71,11 +71,11 @@ export default function Pricing() {
     }
   ]
 
-  const currentPrice = (plan: any) => {
+  const currentPrice = (plan: typeof plans[0]) => {
     return billingPeriod === 'monthly' ? plan.monthlyPrice : Math.floor(plan.yearlyPrice / 12)
   }
 
-  const savings = (plan: any) => {
+  const savings = (plan: typeof plans[0]) => {
     if (billingPeriod === 'yearly') {
       const yearlySavings = (plan.monthlyPrice * 12) - plan.yearlyPrice
       return Math.floor((yearlySavings / (plan.monthlyPrice * 12)) * 100)

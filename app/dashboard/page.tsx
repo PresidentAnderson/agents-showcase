@@ -17,10 +17,8 @@ import {
   Trash2,
   Clock,
   Activity,
-  TrendingUp,
   Users
 } from 'lucide-react'
-import Link from 'next/link'
 
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('overview')

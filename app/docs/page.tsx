@@ -5,9 +5,9 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { 
-  Book, Code, Terminal, Rocket, Settings, Shield,
+  Code, Rocket, Shield,
   ChevronRight, Search, Copy, Check, ExternalLink,
-  FileCode, Database, Cloud, Cpu
+  FileCode, Database, Cloud
 } from 'lucide-react'
 import Link from 'next/link'
 
