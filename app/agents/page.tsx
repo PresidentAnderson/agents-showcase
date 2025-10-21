@@ -136,9 +136,10 @@ export default function Agents() {
             {/* Categories */}
             <div className="flex flex-wrap gap-2">
               {categories.map((category) => (
-                <button
+                <Button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.id)}
+                  variant={selectedCategory === category.id ? "default" : "outline"}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     selectedCategory === category.id
                       ? 'bg-blue-600 text-white'
@@ -149,7 +150,7 @@ export default function Agents() {
                   <Badge variant="secondary" className="ml-2 bg-white/20">
                     {category.count}
                   </Badge>
-                </button>
+                </Button>
               ))}
             </div>
 
